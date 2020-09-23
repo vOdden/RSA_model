@@ -2,7 +2,7 @@ import math
 from random import *
 from sympy import *
 # Functions
-from PSA_Func import *
+from RSA_Func import *
 
 #p = int(input("Enter prime number for p:"))
 #q = int(input("Enter prime number for q:"))
@@ -28,6 +28,7 @@ minPrime = 0
 maxPrime = 1000
 prime_list = [i for i in range(minPrime,maxPrime) if isprime(i)]
 e = random.choice([i for i in prime_list if p<i<q])
+#e = 103
 print("E =",e)
 
 
@@ -38,7 +39,7 @@ print("d =", d)
 
 
 #m = int(input("Enter message for m:"))
-m = 115
+m = 100
 # Keys
 print("Public key:",e,n)
 print("Private key:",d,n)
