@@ -30,7 +30,6 @@ def modinv(e, phi):
         (r_old, r_new) = (r_new, r_old - a * r_new)
     return d_old % phi if r_old == 1 else None
 
-
 def fast_exp(b, e, m):
     r = 1
     if 1 & e:
